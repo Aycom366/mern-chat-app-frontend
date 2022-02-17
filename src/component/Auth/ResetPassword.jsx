@@ -8,12 +8,12 @@ import {
   Heading,
   Input,
 } from "@chakra-ui/react";
-import axios from "axios";
 import { useLocation } from "react-router-dom";
 import AlertComponent from "../AlertComponent";
 import { useGlobalContext } from "../../context";
 import Header from "../Header";
 import queryString from "query-string";
+import axios from "axios";
 
 const ResetPassword = () => {
   const { search } = useLocation();

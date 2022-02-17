@@ -11,10 +11,10 @@ import {
   Heading,
   Input,
 } from "@chakra-ui/react";
-import axios from "axios";
 import { Link } from "react-router-dom";
 import AlertComponent from "../AlertComponent";
 import { useGlobalContext } from "../../context";
+import axios from "axios";
 
 const ForgotPassword = () => {
   const { setMessage, setcloseAlert, closeAlert, serverMessage } =

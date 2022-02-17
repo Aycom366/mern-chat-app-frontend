@@ -17,8 +17,8 @@ import {
 import { AiOutlineEye } from "react-icons/ai";
 import UserBadgeItem from "../User/UserBadgeItem";
 import { FormControl, Input } from "@chakra-ui/react";
-import axios from "axios";
 import UserListItem from "../User/UserListItem";
+import axios from "axios";
 
 const UpdateGroupChat = ({
   fetchAgain,

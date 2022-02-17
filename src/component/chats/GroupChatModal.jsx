@@ -16,11 +16,11 @@ import {
   Wrap,
   WrapItem,
 } from "@chakra-ui/react";
-import axios from "axios";
 import React, { useEffect, useState } from "react";
 import UserListItem from "../User/UserListItem";
 import { useGlobalContext } from "../../context";
 import UserBadgeItem from "../User/UserBadgeItem";
+import axios from "axios";
 
 const GroupChatModal = ({ children }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();

@@ -18,9 +18,9 @@ import Peer from "simple-peer";
 import { BiArrowBack, BiPhone } from "react-icons/bi";
 import { useHistory } from "react-router-dom";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import { BackendEndpoint } from "../../utils/BackendEndpoint";
 
-const Endpoint = "http://localhost:5000";
-let socket = io(Endpoint);
+let socket = io(BackendEndpoint);
 
 const VideoCall = () => {
   const history = useHistory();

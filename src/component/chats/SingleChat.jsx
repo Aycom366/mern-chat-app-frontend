@@ -14,7 +14,6 @@ import "../styles.css";
 import uuid from "react-uuid";
 import Picker from "emoji-picker-react";
 import { VscSmiley } from "react-icons/vsc";
-import axios from "axios";
 import io from "socket.io-client";
 import React, { useEffect, useState } from "react";
 import { BiArrowBack } from "react-icons/bi";
@@ -25,10 +24,12 @@ import UpdateGroupChat from "./UpdateGroupChat";
 import ScrollableChat from "./ScrollableChat";
 import { AiFillAudio } from "react-icons/ai";
 import VoiceNotes from "./VoiceNotes";
+import { BackendEndpoint } from "../../utils/BackendEndpoint";
+import axios from "axios";
 
 //socket io to emit
 //this is where the realtime chat will be implemented
-const EndPoint = "https://aydotcom-chat.herokuapp.com";
+const EndPoint = BackendEndpoint;
 let socket, selectedChatCompare;
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {

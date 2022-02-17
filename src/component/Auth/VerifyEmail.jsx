@@ -1,11 +1,11 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
 import { useLocation, Link } from "react-router-dom";
-import axios from "axios";
 import queryString from "query-string";
 import Header from "../Header";
 import { Box, Flex, Heading } from "@chakra-ui/layout";
 import { Button } from "@chakra-ui/button";
+import axios from "axios";
 
 const VerifyEmail = () => {
   const [error, setError] = useState({ status: false, msg: "" });

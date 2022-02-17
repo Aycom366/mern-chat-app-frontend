@@ -10,9 +10,9 @@ import {
 } from "@chakra-ui/react";
 import AlertComponent from "../AlertComponent";
 import { useGlobalContext } from "../../context";
-import axios from "axios";
 import { useHistory } from "react-router-dom";
 import GoogleLogin from "react-google-login";
+import axios from "axios";
 
 const SignUp = () => {
   const { setMessage, saveUser, setcloseAlert, closeAlert, serverMessage } =

@@ -12,7 +12,6 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import parse from "html-react-parser";
-import axios from "axios";
 import { GrFormAdd } from "react-icons/gr";
 import NotFound from "../User/NotFound";
 import {
@@ -21,6 +20,7 @@ import {
   getSenderPic,
 } from "../../utils/ChatLogics";
 import GroupChatModal from "./GroupChatModal";
+import axios from "axios";
 
 const Chats = () => {
   const toasts = useToast();

@@ -42,10 +42,6 @@ const VoiceNotes = ({ voiceNote, sendAudio, setVoiceNote }) => {
       setMinutes((minutes) => minutes + 1);
       setSeconds(0);
     }
-    // if (minutes === 59) {
-    //   setMinutes(0);
-    //   setHours((hours) => hours + 1);
-    // }
   }, [seconds, timeInterval]);
 
   const stopTimer = () => {

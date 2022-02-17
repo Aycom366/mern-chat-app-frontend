@@ -12,9 +12,9 @@ import {
 } from "@chakra-ui/react";
 import { Link, useHistory } from "react-router-dom";
 import { useGlobalContext } from "../../context";
-import axios from "axios";
 import AlertComponent from "../AlertComponent";
 import GoogleLogin from "react-google-login";
+import axios from "axios";
 
 const Login = () => {
   const history = useHistory();
@@ -87,7 +87,6 @@ const Login = () => {
         }, 2000);
       })
       .catch((err) => {
-        console.log(err.response);
         setMessage("error", err.response.data.msg);
       })
       .finally(() => setIsLoading(false));

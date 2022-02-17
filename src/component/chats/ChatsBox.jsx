@@ -3,7 +3,7 @@ import React from "react";
 import { useGlobalContext } from "../../context";
 import SingleChat from "./SingleChat";
 
-const ChatsBox = ({ socket, socketConnected, setSocketConnected }) => {
+const ChatsBox = () => {
   const { selectedChat, fetchAgain, setFetchAgain } = useGlobalContext();
   return (
     <Box
@@ -15,13 +15,7 @@ const ChatsBox = ({ socket, socketConnected, setSocketConnected }) => {
       borderWidth={"1px"}
       bg="white"
     >
-      <SingleChat
-        socket={socket}
-        socketConnected={socketConnected}
-        setSocketConnected={setSocketConnected}
-        fetchAgain={fetchAgain}
-        setFetchAgain={setFetchAgain}
-      />
+      <SingleChat fetchAgain={fetchAgain} setFetchAgain={setFetchAgain} />
     </Box>
   );
 };

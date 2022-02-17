@@ -21,7 +21,6 @@ import {
 import { useHistory } from "react-router-dom";
 
 import { Tooltip } from "@chakra-ui/tooltip";
-import axios from "axios";
 import React, { useState } from "react";
 import { AiOutlineSearch, AiFillBell } from "react-icons/ai";
 import { FiChevronDown } from "react-icons/fi";
@@ -34,6 +33,7 @@ import NotFound from "../User/NotFound";
 import { getSender } from "../../utils/ChatLogics";
 import { Effect } from "react-notification-badge";
 import NotificationBadge from "react-notification-badge/lib/components/NotificationBadge";
+import axios from "axios";
 
 const SideDrawer = () => {
   const {
