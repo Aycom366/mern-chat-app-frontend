@@ -1,1 +1,1 @@
-export const BackendEndpoint = "https://aydotcom-chat.herokuapp.com";
+export const BackendEndpoint = "web-production-df46.up.railway.app";
