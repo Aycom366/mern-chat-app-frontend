@@ -113,7 +113,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
       }
     });
     //we have to emit or call the new message in backend to run which be done when we fetch chats from backend
-  });
+  },[]);
 
   const sendAudio = async (audioBlob) => {
     if (!audioBlob) return; //if no audio, return
